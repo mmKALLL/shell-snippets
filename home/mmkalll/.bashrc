@@ -358,11 +358,14 @@ alias a="task add"
 alias l="task list"
 alias t="task next"
 
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
 alias less="less -R"
 alias grep="grep -i --color"
 alias k="kubectl"
 alias kj='kill $(jobs -p)'
 alias disablecaps="python -c 'from ctypes import *; X11 = cdll.LoadLibrary(\"libX11.so.6\"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'"
+
+# Remember to install HTTPie and jq.
 
 if [ -s ~/.Xmodmap ]; then
     xmodmap ~/.Xmodmap
