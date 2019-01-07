@@ -1,0 +1,74 @@
+# Caps lock as backspace
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000039,"HIDKeyboardModifierMappingDst":0x70000002A}]}'
+
+# colored GCC warnings and errors
+export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
+
+NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+
+alias rm='rm -i'
+
+PATH="$PATH:/usr/bin"
+PATH="$PATH:/home/mmkalll:/home/esakoskinen"
+
+alias l="ls -lf"
+alias ll="ls -la"
+alias lm="ls -lart"
+alias llllll="source ~/.zshrc"
+
+# Install ruby (`brew install ruby`), then `colorls` gem (`gem install colorls`))
+alias ls='colorls'
+alias lc='colorls'
+
+alias vi="vim"
+alias py="python3"
+alias python="python3"
+
+alias gs="git status"
+alias gc="git commit -am"
+alias gch="git checkout"
+alias gcm="git commit -m"
+alias task="taskwarrior"
+alias gp="git pull --all"
+alias gph="git push"
+alias gps="git push"
+alias gsp="git push"
+alias gpsh="git push"
+alias gpush="git push"
+alias gpss='$(git push 2>&1 | grep "git push") 2>&1'
+alias gpl="git pull --all"
+alias ga="git add ."
+alias gb="git branch"
+alias gd="git diff"
+alias gds="git diff --staged"
+alias grc="git rebase --continue"
+
+alias q="~/qlearning2/qlearn"
+alias alsa="alsamixer"
+alias qm="make clean; make; ~/qlearning/qlearn"
+alias cr="crystal"
+alias crel="crystal build --release --static"
+alias crbuild="crystal build --release --static"
+alias gbash="gnome-terminal"
+
+alias csp='KEMAL_ENV=test LOGGING_IO=STDERR crystal spec 2>/dev/null'
+alias crs='KEMAL_ENV=test LOGGING_IO=STDERR crystal spec 2>/dev/null'
+alias crp='KEMAL_ENV=test LOGGING_IO=STDERR crystal spec 2>/dev/null'
+alias crsp'KEMAL_ENV=test LOGGING_IO=STDERR crystal spec 2>/dev/null'
+
+alias task="taskwarrior"
+alias a="task add"
+alias l="task list"
+alias t="task next"
+
+alias ccat='pygmentize -g -O style=colorful,linenos=1'
+alias less="less -R"
+alias grep="grep -i --color"
+alias k="kubectl"
+alias kj='kill $(jobs -p)'
+alias disablecaps="python -c 'from ctypes import *; X11 = cdll.LoadLibrary(\"libX11.so.6\"); display = X11.XOpenDisplay(None); X11.XkbLockModifiers(display, c_uint(0x0100), c_uint(2), c_uint(0)); X11.XCloseDisplay(display)'"
+
+# Remember to install HTTPie and jq.
+
+
