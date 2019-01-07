@@ -2,6 +2,9 @@
 # For POWERLEVEL9K installation instructions, see
 # https://medium.com/the-code-review/make-your-terminal-more-colourful-and-productive-with-iterm2-and-zsh-11b91607b98c
 
+# !!!! You will also need colorls !!!!
+# Install ruby (`brew install ruby`), then `colorls` gem (`gem install colorls`))
+
 
 # If you come from bash you might have to change your $PATH.
 export PATH=$HOME/bin:/usr/local/bin:$PATH
